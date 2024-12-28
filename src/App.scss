@@ -1,0 +1,15 @@
+.wrapper {
+    @apply max-w-[1920px] mx-auto;
+}
+
+.container {
+    @apply max-w-[1260px] mx-auto px-[15px];
+}
+
+html {
+    @apply font-lato text-xs text-gray-900 leading-[1.5];
+}
+
+body {
+    @apply h-full;
+}
