@@ -5,11 +5,12 @@ const Footer = () => {
                 <div className="footer__info">
                     Footer Info
                 </div>
+            </div>
+            <div className="container">
                 <div className="footer__copyright">
                     Footer Copyright
                 </div>
             </div>
-
         </footer>
     );
 };

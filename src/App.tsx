@@ -1,14 +1,17 @@
 import './App.scss'
-import Header from "./assets/components/Header.tsx";
-import Footer from "./assets/components/Footer.tsx";
+import Header from "./components/chunk/header/Header.tsx";
+import Footer from "./components/chunk/Footer.tsx";
+import Stydying from "./components/homepage/stydying/Stydying.tsx";
+import Statistics from "./components/homepage/statistics/Statistics.tsx";
 
 function App() {
 
     return (
-        <div className="wrapper flex flex-col">
+        <div className="wrapper flex flex-col h-full justify-between">
             <Header />
             <main>
-                Main
+                <Stydying/>
+                <Statistics/>
             </main>
             <Footer />
         </div>

@@ -17,6 +17,8 @@ export default {
         'danger': '#ff4242',
         'warning': '#f89828',
         'info': '#5a87fc',
+        'border' : '#F75E05',
+        'bg-color': '#FEDCD1',
         'gray-900': '#1e212c',
         'gray-800': '#424551',
         'gray-700': '#787a80',
