@@ -3,6 +3,8 @@ import Header from "./components/chunk/header/Header.tsx";
 import Footer from "./components/chunk/Footer.tsx";
 import Stydying from "./components/homepage/stydying/Stydying.tsx";
 import Statistics from "./components/homepage/statistics/Statistics.tsx";
+import Abouting from "./components/homepage/abouting/Abouting.tsx";
+import Courses from "./components/homepage/courses/Courses.tsx";
 
 function App() {
 
@@ -12,6 +14,8 @@ function App() {
             <main>
                 <Stydying/>
                 <Statistics/>
+                <Abouting/>
+                <Courses/>
             </main>
             <Footer />
         </div>

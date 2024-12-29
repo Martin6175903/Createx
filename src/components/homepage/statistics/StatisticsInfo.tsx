@@ -3,7 +3,7 @@ interface StatiscticsInfoProps {
     infoTitle: string,
 }
 
-const StatiscticsInfo = ({quantity, infoTitle}: StatiscticsInfoProps) => {
+const StatisticsInfo = ({quantity, infoTitle}: StatiscticsInfoProps) => {
     return (
         <div className="flex items-center gap-3">
             <h4 className="text-[46px] leading-[1.3] font-black">{quantity}</h4>
@@ -12,4 +12,4 @@ const StatiscticsInfo = ({quantity, infoTitle}: StatiscticsInfoProps) => {
     );
 };
 
-export default StatiscticsInfo;
+export default StatisticsInfo;

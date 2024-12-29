@@ -1,4 +1,4 @@
-import StatiscticsInfo from "./StatiscticsInfo.tsx";
+import StatisticsInfo from "./StatisticsInfo.tsx";
 import StatisticsItemCircle from "./StatisticsItemCircle.tsx";
 
 const Statistics = () => {
@@ -6,13 +6,13 @@ const Statistics = () => {
         <div className="bg-bg-color pb-[82px]">
             <div className="container">
                 <div className="flex justify-between items-center">
-                    <StatiscticsInfo quantity={1200} infoTitle="Students graduated"/>
+                    <StatisticsInfo quantity={1200} infoTitle="Students graduated"/>
                     <StatisticsItemCircle/>
-                    <StatiscticsInfo quantity={84} infoTitle="Completed courses"/>
+                    <StatisticsInfo quantity={84} infoTitle="Completed courses"/>
                     <StatisticsItemCircle/>
-                    <StatiscticsInfo quantity={16} infoTitle="Qualified tutors"/>
+                    <StatisticsInfo quantity={16} infoTitle="Qualified tutors"/>
                     <StatisticsItemCircle/>
-                    <StatiscticsInfo quantity={5} infoTitle="Years of experience"/>
+                    <StatisticsInfo quantity={5} infoTitle="Years of experience"/>
                 </div>
             </div>
         </div>
