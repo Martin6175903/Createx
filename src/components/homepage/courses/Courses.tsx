@@ -2,7 +2,7 @@ import CoursesCards from "./CoursesCards.tsx";
 
 const Courses = () => {
     return (
-        <section>
+        <section className="pb-[180px]">
             <div className="container">
                 <div className="flex justify-between items-end pb-[60px]">
                     <div>

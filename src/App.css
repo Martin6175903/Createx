@@ -1,3 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .benifits__btns .btn {
+    @apply text-gray-600;
+  }
+  .benifits__btns path {
+    @apply fill-gray-600;
+  }
+  .btn-active {
+    @apply border-[1px] border-solid border-primary;
+  }
+  .btn-active path {
+    @apply fill-primary;
+  }
+}
 .wrapper {
   @apply max-w-[1920px] mx-auto;
 }
@@ -47,6 +64,10 @@ body {
 
 .subtitle {
   @apply font-bold text-[16px] uppercase tracking-wider;
+}
+
+.courses__card {
+  box-shadow: 0 4px 4px -4px rgba(30, 33, 44, 0.03), 0 12px 10px -6px rgba(154, 156, 165, 0.04), 0 30px 24px -10px rgba(154, 156, 165, 0.05), 0 80px 80px -20px rgba(154, 156, 165, 0.08);
 }
 
 /*# sourceMappingURL=App.css.map */

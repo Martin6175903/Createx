@@ -15,6 +15,7 @@ export default {
         'secondary': '#ffcf2d',
         'success': '#03cea4',
         'danger': '#ff4242',
+        'pink': '#f52f6e',
         'warning': '#f89828',
         'info': '#5a87fc',
         'border' : '#F75E05',

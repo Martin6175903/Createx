@@ -1,4 +1,4 @@
-import userIcon from '../../../assets/header/user-icon.svg';
+import userIcon from 'src/assets/header/user-icon.svg';
 import NavList from "./nav/NavList.tsx";
 import Logo from "./Logo.tsx";
 

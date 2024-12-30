@@ -5,6 +5,7 @@ import Stydying from "./components/homepage/stydying/Stydying.tsx";
 import Statistics from "./components/homepage/statistics/Statistics.tsx";
 import Abouting from "./components/homepage/abouting/Abouting.tsx";
 import Courses from "./components/homepage/courses/Courses.tsx";
+import Benifits from "./components/homepage/benifits/Benifits.tsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
                 <Statistics/>
                 <Abouting/>
                 <Courses/>
+                <Benifits/>
             </main>
             <Footer />
         </div>
