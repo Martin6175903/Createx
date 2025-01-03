@@ -1,4 +1,4 @@
-import userIcon from 'src/assets/header/user-icon.svg';
+import UserIcon from '@/assets/header/user-icon.svg';
 import NavList from "./nav/NavList.tsx";
 import Logo from "./Logo.tsx";
 
@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="flex gap-9">
                         <button className="btn btn-bg">Get consultation</button>
                         <div className="flex items-center gap-2">
-                            <img src={userIcon} alt="SVG ICON" className="fill-red-500"/>
+                            <UserIcon/>
                             <div>
                                 <a href="#" className="login font-bold">Log in</a> / <a href="#" className="register font-bold">Register</a>
                             </div>

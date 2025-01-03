@@ -29,6 +29,15 @@ export default {
         'gray-300': '#e5e8ed',
         'gray-200': '#f4f5f6',
         'gray-100': '#f9f9f9'
+      },
+      keyframes: {
+        appearance: {
+          '0%': { opacity: 0},
+          '100%': { opacity: 1 }
+        }
+      },
+      animation: {
+        appearance: 'appearance .5s ease-in-out 1',
       }
     },
   },

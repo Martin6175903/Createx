@@ -1,4 +1,4 @@
-import illustrationImage from 'src/assets/homepage/studying/studying-bg.png';
+import illustrationImage from '@/assets/homepage/studying/studying-bg.png';
 
 const Stydying = () => {
     return (

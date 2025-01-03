@@ -1,10 +1,10 @@
-import logo from "src/assets/logo-site.svg";
+import LogoImage from "@/assets/logo-site.svg";
 
 const Logo = () => {
     return (
         <div>
             <a href="#" className="logo">
-                <img src={logo} alt="Logo from Site" className="logo__img"/>
+                <LogoImage/>
             </a>
         </div>
     );

@@ -1,4 +1,4 @@
-import illustrationImage from "src/assets/homepage/abouting/background-img.jpg";
+import illustrationImage from "@/assets/homepage/abouting/background-img.jpg";
 import AboutingList from "./AboutingList.tsx";
 
 const Abouting = () => {

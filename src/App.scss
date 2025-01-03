@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        font-family: "Lato", serif;
+        font-weight: 400;
+    }
+}
+
 @layer components {
     .benifits__btns {
         .btn {
@@ -28,7 +35,7 @@
 }
 
 html {
-    @apply font-lato text-xs text-gray-900 leading-[1.5] h-full;
+    @apply text-gray-900 leading-[1.5] h-full;
 }
 
 body {
@@ -43,6 +50,7 @@ body {
     text-align: center;
     border-radius: 4px;
     font-size: 16px;
+    transition: all .3s;
 }
 
 .btn-padding {
@@ -51,7 +59,7 @@ body {
 
 .btn-bg {
     background: linear-gradient(45deg, #ff3f3a 0%, #f75e05 100%);
-    @apply text-white;
+    @apply text-white border-[1px] border-solid border-transparent;
 }
 
 .btn-bg-none {

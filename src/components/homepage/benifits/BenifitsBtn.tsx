@@ -1,28 +1,32 @@
-import {JSX, MouseEventHandler, useState} from "react";
+import React, {JSX} from "react";
+import chargeAction from "./handleClickBtns.ts";
+
+interface IBtns {
+    active: boolean,
+    id: number,
+    title: string,
+    iconBtn: JSX.Element
+}
 
 interface BenifitsBtnProps {
     title: string;
     children: JSX.Element;
-    btnActive?: boolean;
+    btnActive: boolean;
     id: number;
+    click: IBtns[];
 }
 
 const BenifitsBtn = ({title, btnActive, id, children}: BenifitsBtnProps) => {
-    const [position, setPosition] = useState(0);
 
-    function handleClick(event: MouseEventHandler<HTMLButtonElement>) {
-        const target = event.target.closest("button");
-        if (target.classList.contains("btn-active")) return;
-        target.parentElement?.children[position].classList.remove("btn-active");
-        target.classList.add("btn-active");
-        setPosition(id);
+    function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+        chargeAction(event, id)
     }
 
     return (
-        <button onClick={handleClick} className={"btn" + (btnActive ? " btn-active" : "")}>
-            <span className="flex items-center justify-center gap-2 inline-block h-[26px]">
+        <button onClick={(event) => handleClick(event)} className={"btn" + (btnActive ? " btn-active" : " border-[1px] border-transparent border-solid")}>
+            <span className="flex items-center justify-center gap-2 h-[26px]">
                 {children}
-                <span className={"leading-[1.6]" + (btnActive ? " text-primary" : "")}>{title}</span>
+                <span className={"leading-[1.6] benifits__btn-text" + (btnActive ? " text-primary" : "")}>{title}</span>
             </span>
         </button>
     );
