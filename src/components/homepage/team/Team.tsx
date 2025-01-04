@@ -11,18 +11,20 @@ const Team = () => {
                 <p className="subtitle">Best tutors are all here</p>
                 <h3 className="title mb-[60px]">Meet our team</h3>
                 <div className="flex gap-[30px]">
-                    <TeamItem name="Dianne Russell" sphere="Founder and CEO">
-                        <img className="relative z-10" src={ImagePerson1} alt="Image Person Section Team"/>
-                    </TeamItem>
-                    <TeamItem name="Jerome Bell" sphere="Founder and Program Director">
-                        <img className="relative z-10" src={ImagePerson2} alt="Image Person Section Team"/>
-                    </TeamItem>
-                    <TeamItem name="Kristin Watson" sphere="Marketer, Curator of Marketing Course">
-                        <img className="relative z-10" src={ImagePerson3} alt="Image Person Section Team"/>
-                    </TeamItem>
-                    <TeamItem name="Marvin McKinney" sphere="PM, Curator of Management Course">
-                        <img className="relative z-10" src={ImagePerson4} alt="Image Person Section Team"/>
-                    </TeamItem>
+                    <div className="flex gap-[30px]">
+                        <TeamItem name="Dianne Russell" sphere="Founder and CEO">
+                            <img className="relative z-10" src={ImagePerson1} alt="Image Person Section Team"/>
+                        </TeamItem>
+                        <TeamItem name="Jerome Bell" sphere="Founder and Program Director">
+                            <img className="relative z-10" src={ImagePerson2} alt="Image Person Section Team"/>
+                        </TeamItem>
+                        <TeamItem name="Kristin Watson" sphere="Marketer, Curator of Marketing Course">
+                            <img className="relative z-10" src={ImagePerson3} alt="Image Person Section Team"/>
+                        </TeamItem>
+                        <TeamItem name="Marvin McKinney" sphere="PM, Curator of Management Course">
+                            <img className="relative z-10" src={ImagePerson4} alt="Image Person Section Team"/>
+                        </TeamItem>
+                    </div>
                 </div>
             </div>
         </section>

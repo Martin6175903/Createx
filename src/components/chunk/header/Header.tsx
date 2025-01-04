@@ -1,4 +1,4 @@
-import UserIcon from '@/assets/header/user-icon.svg';
+import UserIcon from '@/assets/header/user-icon.svg?react';
 import NavList from "./nav/NavList.tsx";
 import Logo from "./Logo.tsx";
 

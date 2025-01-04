@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        lato: ['Lato', 'sans-serif']
-      },
       colors: {
         'white': '#fff',
         'primary': '#ff3f3a',

@@ -1,9 +1,9 @@
 import BenifitsBtn from "./BenifitsBtn.tsx";
-import IconBtn1 from "@/assets/homepage/benifits/star-icon.svg";
-import IconBtn2 from "@/assets/homepage/benifits/like-icon.svg";
-import IconBtn3 from "@/assets/homepage/benifits/layouts-icon.svg";
-import IconBtn4 from "@/assets/homepage/benifits/chat-icon.svg";
-import IlluastationImage from "@/assets/homepage/benifits/benitits-illustration.svg";
+import IconBtn1 from "@/assets/homepage/benifits/star-icon.svg?react";
+import IconBtn2 from "@/assets/homepage/benifits/like-icon.svg?react";
+import IconBtn3 from "@/assets/homepage/benifits/layouts-icon.svg?react";
+import IconBtn4 from "@/assets/homepage/benifits/chat-icon.svg?react";
+import IlluastationImage from "@/assets/homepage/benifits/benitits-illustration.svg?react";
 
 const Benifits = () => {
 
