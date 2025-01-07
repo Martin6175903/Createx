@@ -38,7 +38,7 @@ export default {
             right: "auto",
             left: "-2000px"
           },
-          '95%': {
+          '99%': {
             left: "-10px",
             right: "auto",
             position: "absolute"
@@ -54,7 +54,7 @@ export default {
             left: "auto",
             right: "-2000px"
           },
-          '95%': {
+          '99%': {
             right: "-10px",
             left: "auto",
             position: "absolute"
@@ -97,10 +97,10 @@ export default {
       },
       animation: {
         appearance: 'appearance .5s ease-in-out 1',
-        'slider-active-left': 'slider-active-left 1s ease-in-out 1',
-        'slider-translate-left': 'slider-translate-left 1s ease-in-out 1',
-        'slider-active-right': 'slider-active-right 1s ease-in-out 1',
-        'slider-translate-right': 'slider-translate-right 1s ease-in-out 1'
+        'slider-active-left': 'slider-active-left 1.5s ease-in-out 1',
+        'slider-translate-left': 'slider-translate-left 1.5s ease-in-out 1',
+        'slider-active-right': 'slider-active-right 1.5s ease-in-out 1',
+        'slider-translate-right': 'slider-translate-right 1.5s ease-in-out 1'
       }
     },
   },

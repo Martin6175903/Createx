@@ -9,6 +9,8 @@ import Benifits from "./components/homepage/benifits/Benifits.tsx";
 import Events from "@/components/homepage/events/Events.tsx";
 import Certificate from "@/components/homepage/certificate/Certificate.tsx";
 import Team from "@/components/homepage/team/Team.tsx";
+import Testimonialts from "@/components/homepage/testimonialts/Testimonialts.tsx";
+import Blog from "@/components/homepage/blog/Blog.tsx";
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
                 <Events/>
                 <Certificate/>
                 <Team/>
+                <Testimonialts/>
+                <Blog/>
             </main>
             <Footer />
         </div>
