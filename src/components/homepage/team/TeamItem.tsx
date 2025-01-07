@@ -14,6 +14,7 @@ const TeamItem = ({ name, sphere, children }: ITeamItem<string>) => {
     function hoverEnterItem() {
         setItemHover(!itemHover);
     }
+
     function hoverLeaveItem() {
         setItemHover(!itemHover);
     }

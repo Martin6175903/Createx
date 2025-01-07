@@ -3,9 +3,13 @@ import {Dispatch, SetStateAction} from "react";
 interface ISliderActionSwitches {
     actionArr: boolean[];
     setAction: Dispatch<SetStateAction<boolean[]>>
+    useNextArrow: boolean;
+    setUseNextArrow: Dispatch<SetStateAction<boolean>>;
+    usePrevArrow: boolean;
+    setUsePrevArrow: Dispatch<SetStateAction<boolean>>;
 }
 
-const SliderActionSwitches = ({actionArr, setAction}: ISliderActionSwitches) => {
+const SliderActionSwitches = ({actionArr, setAction, usePrevArrow, setUsePrevArrow, useNextArrow, setUseNextArrow}: ISliderActionSwitches) => {
 
     function handleClickPrevArrow() {
         const items = actionArr;
@@ -13,6 +17,11 @@ const SliderActionSwitches = ({actionArr, setAction}: ISliderActionSwitches) => 
         if (posActiveItem === 0) return false;
         items[posActiveItem] = false;
         items[posActiveItem - 1] = true;
+
+        if (useNextArrow) setUseNextArrow(false);
+
+        setUsePrevArrow(true);
+
         setAction([...items]);
     }
 
@@ -22,6 +31,11 @@ const SliderActionSwitches = ({actionArr, setAction}: ISliderActionSwitches) => 
         if (posActiveItem === items.length - 1) return false;
         items[posActiveItem] = false;
         items[posActiveItem + 1] = true;
+
+        if (usePrevArrow) setUsePrevArrow(false);
+
+        setUseNextArrow(true);
+
         setAction([...items]);
     }
 
