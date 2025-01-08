@@ -8,7 +8,7 @@ const Header = () => {
             <div className="container">
                 <div className="flex justify-between">
                     <div className="flex items-center gap-[60px]">
-                        <Logo/>
+                        <Logo color="#1E212C"/>
                         <NavList/>
                     </div>
                     <div className="flex gap-9">

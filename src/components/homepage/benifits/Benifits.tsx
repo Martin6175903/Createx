@@ -4,6 +4,7 @@ import IconBtn2 from "@/assets/homepage/benifits/like-icon.svg?react";
 import IconBtn3 from "@/assets/homepage/benifits/layouts-icon.svg?react";
 import IconBtn4 from "@/assets/homepage/benifits/chat-icon.svg?react";
 import IlluastationImage from "@/assets/homepage/benifits/benitits-illustration.svg?react";
+import {useState} from "react";
 
 const Benifits = () => {
 
@@ -14,6 +15,9 @@ const Benifits = () => {
         { active: false, id: 3, title: "Community", iconBtn: <IconBtn4/> }
     ]
 
+    const [btnsActive, setBtnActive] = useState([true, false, false, false]);
+    const [activeElemPos, setActiveElemPos] = useState(0);
+
     return (
         <section className="pb-[120px]">
             <div className="container">
@@ -23,7 +27,7 @@ const Benifits = () => {
                 </div>
                 <div className="benifits__btns grid grid-cols-4 mb-[60px]">
                     {btnsInfo.map(btn =>
-                        <BenifitsBtn title={btn.title} btnActive={btn.active} key={btn.id} id={btn.id} click={btnsInfo}>
+                        <BenifitsBtn title={btn.title} btnActive={btnsActive[btn.id]} key={btn.id} id={btn.id} btnsActive={btnsActive} setBtnsActive={setBtnActive} activeElemPos={activeElemPos} setActiveElemPos={setActiveElemPos}>
                             {btn.iconBtn}
                         </BenifitsBtn>
                     )}
