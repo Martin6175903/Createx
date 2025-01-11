@@ -8,7 +8,9 @@ function App() {
     return (
         <div className="wrapper flex flex-col h-full justify-between">
             <Header/>
-                <Outlet/>
+                <main>
+                    <Outlet/>
+                </main>
             <Footer/>
         </div>
     )

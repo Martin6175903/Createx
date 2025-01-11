@@ -9,7 +9,7 @@ import Homepage from "@/pages/Homepage.tsx";
 import Blog from "@/pages/Blog.tsx";
 import Contacts from "@/pages/Contacts.tsx";
 import Course from "@/pages/Course.tsx";
-import Courses from "@/pages/Courses.tsx";
+import Courses from "@/pages/courses/Courses.tsx";
 import Event from "@/pages/Event.tsx";
 import EventsGridView from "@/pages/EventsGridView.tsx";
 import EventsListView from "@/pages/EventsListView.tsx";
