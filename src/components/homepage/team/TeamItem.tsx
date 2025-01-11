@@ -1,5 +1,6 @@
 import Element = React.JSX.Element;
 import React, { useState } from "react";
+import {Link} from "react-router-dom";
 
 interface ITeamItem<T> {
     name: T;
@@ -26,7 +27,7 @@ const TeamItem = ({ name, sphere, children }: ITeamItem<string>) => {
                 {children}
                 <div
                     className={"flex items-center absolute bottom-5 right-5 gap-3 z-30 " + (!itemHover ? "opacity-0" : "animate-appearance")}>
-                    <a href="#" className="size-5 group/edit flex items-center justify-center">
+                    <Link to={"/"} className="size-5 group/edit flex items-center justify-center">
                         <svg width="10" height="20" viewBox="0 0 10 20" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <g className="opacity-[0.6] duration-200 group-hover/edit:opacity-100">
@@ -35,8 +36,8 @@ const TeamItem = ({ name, sphere, children }: ITeamItem<string>) => {
                                     fill="white"/>
                             </g>
                         </svg>
-                    </a>
-                    <a href="#" className="size-5 group/edit flex items-center justify-center">
+                    </Link>
+                    <Link to={"/"} className="size-5 group/edit flex items-center justify-center">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <g className="opacity-[0.6] duration-200 group-hover/edit:opacity-100">
@@ -51,8 +52,8 @@ const TeamItem = ({ name, sphere, children }: ITeamItem<string>) => {
                                     fill="white"/>
                             </g>
                         </svg>
-                    </a>
-                    <a href="#" className="size-5 group/edit flex items-center justify-center">
+                    </Link>
+                    <Link to={"/"} className="size-5 group/edit flex items-center justify-center">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <g className="opacity-[0.6] duration-200 group-hover/edit:opacity-100">
@@ -65,7 +66,7 @@ const TeamItem = ({ name, sphere, children }: ITeamItem<string>) => {
                                     fill="white"/>
                             </g>
                         </svg>
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="text-center">

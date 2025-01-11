@@ -1,4 +1,5 @@
 import EventsItem from "@/components/homepage/events/EventsItem.tsx";
+import {Link} from "react-router-dom";
 
 const Events = () => {
     return (
@@ -15,7 +16,7 @@ const Events = () => {
                 </div>
                 <div className="flex justify-center items-center gap-10">
                     <p className="text-[28px] font-bold">Do you want more?</p>
-                    <button className="btn btn-bg">Explore all events</button>
+                    <Link to={"events-grid-view"} className="btn btn-bg">Explore all events</Link>
                 </div>
             </div>
         </section>

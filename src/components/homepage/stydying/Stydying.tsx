@@ -1,4 +1,5 @@
 import illustrationImage from '@/assets/homepage/studying/studying-bg.png';
+import {Link} from "react-router-dom";
 
 const Stydying = () => {
     return (
@@ -23,8 +24,8 @@ const Stydying = () => {
                             with Createx Online Courses
                         </h1>
                         <div className="flex gap-6">
-                            <button className="btn btn-bg-none">About us</button>
-                            <button className="btn btn-bg">Explore courses</button>
+                            <Link to={"about"} className="btn btn-bg-none">About us</Link>
+                            <Link to={"courses"} className="btn btn-bg">Explore courses</Link>
                         </div>
                     </div>
                     <div>

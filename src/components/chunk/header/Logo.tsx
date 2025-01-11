@@ -1,9 +1,10 @@
 import {FC} from "react";
+import {Link} from "react-router-dom";
 
 const Logo:FC<{color: string}> = ({color}) => {
     return (
         <div>
-            <a href="#" className="logo">
+            <Link to={"/"} className="logo">
                 <svg width="130" height="22" viewBox="0 0 130 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g>
                         <path
@@ -32,7 +33,7 @@ const Logo:FC<{color: string}> = ({color}) => {
                             fill="#FF3F3A"/>
                     </g>
                 </svg>
-            </a>
+            </Link>
         </div>
     );
 };

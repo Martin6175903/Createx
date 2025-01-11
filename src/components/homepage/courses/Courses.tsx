@@ -1,4 +1,5 @@
 import CoursesCards from "./CoursesCards.tsx";
+import {Link} from "react-router-dom";
 
 const Courses = () => {
     return (
@@ -10,7 +11,7 @@ const Courses = () => {
                         <h3 className="title">Featured Courses</h3>
                     </div>
                     <div>
-                        <button className="btn btn-bg-none">View all courses</button>
+                        <Link to={"courses"} className="btn btn-bg-none">View all courses</Link>
                     </div>
                 </div>
                 <CoursesCards/>

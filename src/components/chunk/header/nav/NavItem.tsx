@@ -1,11 +1,15 @@
+import {Link} from "react-router-dom";
+
 type NavItemProps = {
     title: string;
-    href?: string;
+    link: string;
 }
 
-const NavItem = ({ title }: NavItemProps) => {
+const NavItem = ({ title, link }: NavItemProps) => {
     return (
-        <li className="nav__list-item font-bold leading-[1.6] text-gray-800"><a href="#" className="nav__list-link">{title}</a></li>
+        <li className="nav__list-item font-bold leading-[1.6] text-gray-800">
+            <Link to={link} className="nav__list-link">{title}</Link>
+        </li>
     );
 };
 

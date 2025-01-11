@@ -35,10 +35,12 @@ const Footer = () => {
                     <FooterList
                         title={"SITE MAP"}
                         items={["About Us", "Courses", "Events", "Blog", "Contacts"]}
+                        links={["about", "courses", "events-list-view", "blog", "contacts"]}
                     />
                     <FooterList
                         title={"COURSES"}
                         items={["Marketing", "Management", "HR & Recruting", "Design", "Development"]}
+                        links={["about", "courses", "events-list-view", "blog", "contacts"]}
                     />
                     <div>
                         <FooterListTitle title={"CONTACT US"}/>

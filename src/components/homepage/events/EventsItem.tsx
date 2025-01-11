@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 interface IEventsItem<T> {
     num: T;
@@ -34,7 +35,7 @@ const EventsItem = ({num, month, time, infoTitle, infoSubtitle}: IEventsItem<str
                 <p className="info-subtitle text-[16px] leading-[1.6] text-gray-700">{infoSubtitle}</p>
             </div>
             <div>
-                <button className={"events__btn btn whitespace-nowrap " + (btnHover ? "btn-bg" : "btn-bg-none")}>View more</button>
+                <Link to={"event"} className={"events__btn btn whitespace-nowrap " + (btnHover ? "btn-bg" : "btn-bg-none")}>View more</Link>
             </div>
         </div>
     );

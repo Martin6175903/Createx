@@ -5,6 +5,7 @@ import BlogImage3 from "@/assets/homepage/blog/blog-img-3.png";
 import IconMicro from "@/assets/homepage/blog/microfon-icon.svg?react";
 import IconPlay from "@/assets/homepage/blog/play-icon.svg?react";
 import IconFiles from "@/assets/homepage/blog/file-icon.svg?react";
+import {Link} from "react-router-dom";
 
 const Blog = () => {
 
@@ -58,7 +59,7 @@ const Blog = () => {
                         <p className="subtitle">Our blog</p>
                         <h3 className="title">Latest posts</h3>
                     </div>
-                    <button className="btn btn-bg">Go to blog</button>
+                    <Link to={"blog"} className="btn btn-bg">Go to blog</Link>
                 </div>
                 <div className="flex gap-[30px]">
                     {blogItemsInfo.map((item, index) =>
