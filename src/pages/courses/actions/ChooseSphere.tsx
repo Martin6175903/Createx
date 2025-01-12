@@ -1,7 +1,24 @@
-import {useState} from "react";
+import {Dispatch, SetStateAction, useState} from "react";
 import ChooseSphereBtn from "@/pages/courses/actions/ChooseSphereBtn.tsx";
 
-const ChooseSphere = () => {
+interface IProps {
+    setCourses: Dispatch<SetStateAction<{
+        src: string;
+        sphere: string;
+        name: string;
+        price: number;
+        author: string;
+    }[]>>
+    coursesTitleObj: {
+        src: string;
+        sphere: string;
+        name: string;
+        price: number;
+        author: string;
+    }[]
+}
+
+const ChooseSphere = ({ setCourses, coursesTitleObj}: IProps) => {
 
     const btnsInfo = [
         {
@@ -47,6 +64,8 @@ const ChooseSphere = () => {
                     pos={item.pos}
                     btnActivePos={btnActivePos}
                     setBtnActivePos={setBtnActivePos}
+                    setCourses={setCourses}
+                    coursesTitleObj={coursesTitleObj}
                 />
             )}
         </div>

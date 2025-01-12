@@ -1,18 +1,42 @@
 import {Dispatch, SetStateAction} from "react";
 
+interface ICourse {
+    src: string;
+    sphere: string;
+    name: string;
+    price: number;
+    author: string;
+}
+
 interface IProps {
     title: string
     quantity: number
     pos: number
     btnActivePos: number
     setBtnActivePos: Dispatch<SetStateAction<number>>
+    setCourses: Dispatch<SetStateAction<ICourse[]>>
+    coursesTitleObj: ICourse[]
 }
 
-const ChooseSphereBtn = ({title, quantity, pos, btnActivePos, setBtnActivePos}: IProps) => {
+const ChooseSphereBtn = ({title, quantity, pos, btnActivePos, setBtnActivePos, setCourses, coursesTitleObj}: IProps) => {
+
+    function coursesSorted(title: string): void {
+        if (title === "All") {
+            setCourses([...coursesTitleObj])
+            return;
+        }
+        const resSorted:ICourse[] = [];
+        for (const course of coursesTitleObj) {
+            if (course.sphere === title) resSorted.push(course)
+        }
+        setCourses(resSorted)
+    }
 
     function handleClick() {
         if (btnActivePos === pos) return false;
         setBtnActivePos(pos);
+
+        coursesSorted(title)
     }
 
     return (
